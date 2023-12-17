@@ -61,7 +61,7 @@ def process_calculation(update: Update, context: CallbackContext) -> None:
     context.bot.send_message(chat_id=update.effective_chat.id, text=f"Your expression: {expression}\n\n➡️  Result: {result:.2f}")
 
 
-updater = Updater(6338590919:AAHfAQQIe19tMYkvWrVF8-pwGj9Fu32wYvk)
+updater = Updater(6338590919:AAGPthAzefXuAa-MAEH-NmLfYYhQxgTegIM)
 updater.dispatcher.add_handler(MessageHandler(Filters.text(" Calculator"), calculator))
 updater.dispatcher.add_handler(MessageHandler(Filters.text, process_calculation))
 updater.dispatcher.add_handler(CallbackQueryHandler(button_handler))
